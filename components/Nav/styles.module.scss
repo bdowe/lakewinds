@@ -1,0 +1,32 @@
+.container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+    .btn {
+        position: fixed;
+        z-index: 999;
+    }
+
+    .menu {
+        width: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+        background-color: #000;
+        color: #fff;
+        opacity: 0.6;
+        padding-top: 20px;
+
+        &.visible {
+            width: 250px;
+        }
+
+        .menuContainer {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+    }
+}
