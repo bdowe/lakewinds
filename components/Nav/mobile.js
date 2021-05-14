@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import styles from './styles.module.scss';
+import styles from './styles-mobile.module.scss';
 import MenuIcon from './MenuIcon';
 
 
-const Nav = () => {
+const NavMobile = () => {
     const [menuClass, setMenuClass] = useState(styles.menu);
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -34,4 +34,4 @@ const Nav = () => {
     );
 };
 
-export default Nav;
+export default NavMobile;
